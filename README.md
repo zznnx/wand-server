@@ -8,4 +8,4 @@ sudo apt install curl
 timedatectl set-timezone Asia/Shanghai
 <br><br>
 一键安装<br>
-bash <(curl -Ls https://raw.githubusercontent.com/vmzn/wand-server/master/install.sh)
+bash <(curl -Ls https://raw.githubusercontent.com/zznnx/wand-server/master/install.sh)
