@@ -1,6 +1,6 @@
 package panel
 
-import "github.com/vmzn/wand-server/service/controller"
+import "github.com/zznnx/wand-server/service/controller"
 
 func getDefaultLogConfig() *LogConfig {
 	return &LogConfig{

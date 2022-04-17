@@ -6,12 +6,12 @@ import (
 	"reflect"
 	"time"
 
-	"github.com/vmzn/wand-server/api"
-	"github.com/vmzn/wand-server/common/legocmd"
-	"github.com/vmzn/wand-server/common/serverstatus"
 	"github.com/xtls/xray-core/common/protocol"
 	"github.com/xtls/xray-core/common/task"
 	"github.com/xtls/xray-core/core"
+	"github.com/zznnx/wand-server/api"
+	"github.com/zznnx/wand-server/common/legocmd"
+	"github.com/zznnx/wand-server/common/serverstatus"
 )
 
 type Controller struct {

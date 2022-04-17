@@ -2,7 +2,7 @@ package cmd
 
 import (
 	"github.com/urfave/cli"
-	"github.com/vmzn/wand-server/common/legocmd/log"
+	"github.com/zznnx/wand-server/common/legocmd/log"
 )
 
 func Before(ctx *cli.Context) error {

@@ -9,7 +9,7 @@ import (
 	"github.com/go-acme/lego/v4/certificate"
 	"github.com/go-acme/lego/v4/lego"
 	"github.com/urfave/cli"
-	"github.com/vmzn/wand-server/common/legocmd/log"
+	"github.com/zznnx/wand-server/common/legocmd/log"
 )
 
 const (

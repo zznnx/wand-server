@@ -4,10 +4,10 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/vmzn/wand-server/api"
 	"github.com/xtls/xray-core/common/net"
 	"github.com/xtls/xray-core/core"
 	"github.com/xtls/xray-core/infra/conf"
+	"github.com/zznnx/wand-server/api"
 )
 
 //OutboundBuilder build freedom outbund config for addoutbound

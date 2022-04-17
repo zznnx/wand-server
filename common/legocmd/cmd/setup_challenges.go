@@ -14,7 +14,7 @@ import (
 	"github.com/go-acme/lego/v4/providers/http/memcached"
 	"github.com/go-acme/lego/v4/providers/http/webroot"
 	"github.com/urfave/cli"
-	"github.com/vmzn/wand-server/common/legocmd/log"
+	"github.com/zznnx/wand-server/common/legocmd/log"
 )
 
 func setupChallenges(ctx *cli.Context, client *lego.Client) {

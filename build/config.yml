@@ -1,0 +1,37 @@
+Log:
+    Level: none # Log level: none, error, warning, info, debug 
+    AccessPath: # /etc/wand/access.Log
+    ErrorPath: # /etc/wand/error.log
+    DnsConfigPath: # /etc/wand/dns.json # Path to dns config, check https://xtls.github.io/config/dns.html for help
+    RouteConfigPath: # /etc/wand/route.json # Path to route config, check https://xtls.github.io/config/routing.html for help
+    InboundConfigPath: # /etc/wand/custom_inbound.json # Path to custom inbound config, check https://xtls.github.io/config/inbound.html for help
+    OutboundConfigPath: # /etc/wand/custom_outbound.json # Path to custom outbound config, check https://xtls.github.io/config/outbound.html for help
+ConnetionConfig:
+    Handshake: 4 # Handshake time limit, Second
+    ConnIdle: 30 # Connection idle time limit, Second
+    UplinkOnly: 2 # Time limit when the connection downstream is closed, Second
+    DownlinkOnly: 4 # Time limit when the connection is closed after the uplink is closed, Second
+    BufferSize: 64 # The internal cache size of each connection, kB 
+Nodes:
+    -
+      ApiConfig:
+        ApiHost: "http://127.0.0.1"
+        ApiKey: "123456"
+        NodeID: 0
+        NodeType: V2ray # Node type: V2ray, Shadowsocks, Trojan
+        Timeout: 30 # Timeout for the api request
+        EnableVless: false # Enable Vless for V2ray Type
+        EnableXTLS: false # Enable XTLS for V2ray and Trojan
+        SpeedLimit: 0 # Mbps, Local settings will replace remote settings
+        DeviceLimit: 0 # Local settings will replace remote settings
+      ControllerConfig:
+        ListenIP: 0.0.0.0 # IP address you want to listen
+        UpdatePeriodic: 10 # Time to update the nodeinfo, how many sec.
+        EnableDNS: false # Use custom DNS config, Please ensure that you set the dns.json well
+        CertConfig:
+          CertMode: http # Option about how to get certificate: none, file, http, dns
+          CertDomain: "node1.test.com" # Domain to cert
+          CertFile: /etc/wand/cert/http.cert # Provided if the CertMode is file
+          KeyFile: /etc/wand/cert/http.pem
+          Email: admin@mail.com
+

@@ -4,8 +4,6 @@ import (
 	"context"
 	"fmt"
 
-	"github.com/vmzn/wand-server/api"
-	"github.com/vmzn/wand-server/app/mydispatcher"
 	"github.com/xtls/xray-core/common/protocol"
 	"github.com/xtls/xray-core/core"
 	"github.com/xtls/xray-core/features/inbound"
@@ -13,6 +11,8 @@ import (
 	"github.com/xtls/xray-core/features/routing"
 	"github.com/xtls/xray-core/features/stats"
 	"github.com/xtls/xray-core/proxy"
+	"github.com/zznnx/wand-server/api"
+	"github.com/zznnx/wand-server/app/mydispatcher"
 )
 
 func (c *Controller) removeInbound(tag string) error {

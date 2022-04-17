@@ -1,8 +1,8 @@
 package panel
 
 import (
-	"github.com/vmzn/wand-server/api"
-	"github.com/vmzn/wand-server/service/controller"
+	"github.com/zznnx/wand-server/api"
+	"github.com/zznnx/wand-server/service/controller"
 )
 
 type Config struct {

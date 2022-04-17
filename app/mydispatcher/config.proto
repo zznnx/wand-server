@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package wand.app.mydispatcher;
 option csharp_namespace = "Wand.App.Myispatcher";
-option go_package = "github.com/vmzn/wand-server/app/mydispatcher";
+option go_package = "github.com/zznnx/wand-server/app/mydispatcher";
 option java_package = "com.wand.app.mydispatcher";
 option java_multiple_files = true;
 

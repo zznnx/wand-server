@@ -9,7 +9,7 @@ import (
 	"sync"
 
 	mapset "github.com/deckarep/golang-set"
-	"github.com/vmzn/wand-server/api"
+	"github.com/zznnx/wand-server/api"
 )
 
 type RuleManager struct {

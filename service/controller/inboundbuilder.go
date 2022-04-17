@@ -5,12 +5,12 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/vmzn/wand-server/api"
-	"github.com/vmzn/wand-server/common/legocmd"
 	"github.com/xtls/xray-core/common/net"
 	"github.com/xtls/xray-core/common/uuid"
 	"github.com/xtls/xray-core/core"
 	"github.com/xtls/xray-core/infra/conf"
+	"github.com/zznnx/wand-server/api"
+	"github.com/zznnx/wand-server/common/legocmd"
 )
 
 //InboundBuilder build Inbound config for different protocol

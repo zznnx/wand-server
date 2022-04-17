@@ -8,16 +8,16 @@ import (
 
 	"github.com/imdario/mergo"
 	"github.com/r3labs/diff/v2"
-	"github.com/vmzn/wand-server/api/wand"
-	"github.com/vmzn/wand-server/app/mydispatcher"
-	_ "github.com/vmzn/wand-server/main/distro/all"
-	"github.com/vmzn/wand-server/service"
-	"github.com/vmzn/wand-server/service/controller"
 	"github.com/xtls/xray-core/app/proxyman"
 	"github.com/xtls/xray-core/app/stats"
 	"github.com/xtls/xray-core/common/serial"
 	"github.com/xtls/xray-core/core"
 	"github.com/xtls/xray-core/infra/conf"
+	"github.com/zznnx/wand-server/api/wand"
+	"github.com/zznnx/wand-server/app/mydispatcher"
+	_ "github.com/zznnx/wand-server/main/distro/all"
+	"github.com/zznnx/wand-server/service"
+	"github.com/zznnx/wand-server/service/controller"
 )
 
 // Panel Structure

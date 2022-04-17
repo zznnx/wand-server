@@ -7,7 +7,7 @@ import (
 	"time"
 
 	"github.com/juju/ratelimit"
-	"github.com/vmzn/wand-server/api"
+	"github.com/zznnx/wand-server/api"
 )
 
 type UserInfo struct {

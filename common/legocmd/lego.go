@@ -12,7 +12,7 @@ import (
 	"strings"
 
 	"github.com/urfave/cli"
-	"github.com/vmzn/wand-server/common/legocmd/cmd"
+	"github.com/zznnx/wand-server/common/legocmd/cmd"
 )
 
 var version = "dev"

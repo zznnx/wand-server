@@ -13,7 +13,7 @@ import (
 	"github.com/go-acme/lego/v4/lego"
 	"github.com/go-acme/lego/v4/registration"
 	"github.com/urfave/cli"
-	"github.com/vmzn/wand-server/common/legocmd/log"
+	"github.com/zznnx/wand-server/common/legocmd/log"
 )
 
 const filePerm os.FileMode = 0o600
