@@ -104,13 +104,13 @@ install_wand() {
     mkdir /usr/local/wand/ -p
 	cd /usr/local/wand/
 	
-	last_version=$(curl -Ls "https://api.github.com/repos/vmzn/wand-server/releases/latest" | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/')
+	last_version=$(curl -Ls "https://api.github.com/repos/zznnx/wand-server/releases/latest" | grep '"tag_name":' | sed -E 's/.*"([^"]+)".*/\1/')
 	if [[ ! -n "$last_version" ]]; then
 		echo -e "${red}检测 Wand 版本失败，可能是超出 Github API 限制，请稍后再试${plain}"
 		exit 1
 	fi
 	echo -e "检测到 Wand 最新版本：${last_version}，开始安装"
-	wget -N --no-check-certificate -O /usr/local/wand/wand-linux.zip https://github.com/vmzn/wand-server/releases/download/${last_version}/wand-linux-${arch}.zip
+	wget -N --no-check-certificate -O /usr/local/wand/wand-linux.zip https://github.com/zznnx/wand-server/releases/download/${last_version}/wand-linux-${arch}.zip
 	if [[ $? -ne 0 ]]; then
 		echo -e "${red}下载 Wand 失败，请确保你的服务器能够下载 Github 的文件${plain}"
 		exit 1
@@ -121,7 +121,7 @@ install_wand() {
     chmod +x wand
     mkdir /etc/wand/ -p
     rm /etc/systemd/system/wand.service -f
-    file="https://raw.githubusercontent.com/vmzn/wand-server/master/wand.service"
+    file="https://raw.githubusercontent.com/zznnx/wand-server/master/wand.service"
     wget -N --no-check-certificate -O /etc/systemd/system/wand.service ${file}
     #cp -f wand.service /etc/systemd/system/
     systemctl daemon-reload
@@ -156,7 +156,7 @@ install_wand() {
     if [[ ! -f /etc/wand/custom_outbound.json ]]; then
         cp custom_outbound.json /etc/wand/
     fi
-    curl -o /usr/bin/wand -Ls https://raw.githubusercontent.com/vmzn/wand-server/master/wand.sh
+    curl -o /usr/bin/wand -Ls https://raw.githubusercontent.com/zznnx/wand-server/master/wand.sh
     chmod +x /usr/bin/wand
     ln -s /usr/bin/Wand /usr/bin/wand # 小写兼容
     chmod +x /usr/bin/wand
